@@ -11,8 +11,6 @@ function Book(name, author, genre) {
     this.name = name;
     this.author = author;
     this.genre = genre;
-
-    this.printBook = () => `${this.name} by ${this.author} with gener ${this.gener}`;
 }
 
 function addBookToLibrary(name, author, genre) {
@@ -24,7 +22,7 @@ function addBookToLibrary(name, author, genre) {
 
 const removeBtnOnClick = (e) => {
     const parent = e.target.parentElement;
-    
+
     library = library.filter(book => !(book.name === parent.querySelector(".name").getAttribute("data-content") && book.author === parent.querySelector(".author").getAttribute("data-content") && book.genre === parent.querySelector(".genre").getAttribute("data-content")));
     visited = visited.filter(book => !(book.name === parent.querySelector(".name").getAttribute("data-content") && book.author === parent.querySelector(".author").getAttribute("data-content") && book.genre === parent.querySelector(".genre").getAttribute("data-content")));
 
