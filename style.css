@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    background-color: aliceblue;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+fieldset,
+input,
+label{
+    margin: 0;
+    padding: 0;
+    display: block;
+    border: none;
+}
+
+fieldset{
+    padding: 2rem;
+}
+
+input{
+    border: 2px solid black;
+    width: 100%;
+    height: 3rem;
+    padding: 1rem 2rem;
+}
+
+label{
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.wrapper{
+    background: linear-gradient(30deg, blue, red);
+    border: 4px solid black;
+    padding: 1rem;
+}
+
+button{
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1rem 2rem;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 2px 2px 20px rgba(255, 255, 255, 0.2),
+                2px 2px 40px rgba(255, 255, 255, 0.4);
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 20rem));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card-container > *{
+    background-color: bisque;
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+button{
+    color: white;
+}
+
+.removeBtn{
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 1rem;
+}
+
+.changeBtn{
+    border: 2px solid black;
+    display: inline-block;
+    color: black;
+}
