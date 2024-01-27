@@ -57,6 +57,7 @@ button:hover{
 .card-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 20rem));
+    justify-content: center; 
     gap: 2rem;
     padding: 2rem;
 }
